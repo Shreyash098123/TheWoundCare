@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <!-- Updated SEO Meta Tags from GulMohar -->
   <meta name="description" content="TheWoundCare provides expert home nursing, wound care, and physiotherapy services in Pune. Book professional care for wound dressing, debridement, bed sore treatment, and more.">
   <meta name="keywords" content="wound care, home nursing, physiotherapy, bed sore treatment, Pune nursing services, wound dressing, post-surgery care">
   <meta name="author" content="TheWoundCare">
@@ -11,22 +10,106 @@
   <meta property="og:description" content="Experienced nursing staff providing specialized wound care, dressing, debridement, and physiotherapy services in the comfort of your home.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.thewoundcare.com">
-  <meta property="og:image" content="logo1.png">
+  <meta property="og:image" content="logo111.png">
   
   <title>TheWoundCare.com | Professional Home Nursing & Physiotherapy Services</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-  <link href="style.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet">
+  <style>
+    /* Critical CSS loaded inline for better performance */
+    :root {
+      --primary: #1a5c9e;
+      --secondary: #38a169;
+      --accent: #c53030;
+      --light: #f8f9fa;
+      --dark: #2d3748;
+      --gray: #718096;
+      --footer-bg: #2d3748;
+      --text-primary: #003249;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background-color: #f5f7fa;
+      padding-top: 70px;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    
+    /* Header styles for initial render */
+    header {
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+    }
+    
+    .logo img {
+      height: 50px;
+      width: auto;
+    }
+    
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: var(--primary);
+      cursor: pointer;
+      padding: 10px;
+    }
+    
+    /* Hero section for initial render */
+    .hero {
+      background: linear-gradient(rgba(26, 92, 158, 0.9), rgba(26, 92, 158, 0.9));
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+    
+    .hero h1 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <div class="container header-container">
       <div class="logo">
-        <img src="logo1.png" alt="The Wound Care Logo"/>
-        <h1>The<span>Wound</span>Care</h1>
+        <img src="logo111.png" alt="The Wound Care Logo" width="180" height="50"/>
       </div>
      
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      
       <nav aria-label="Main Navigation">
         <ul>
           <li><a href="#home">Home</a></li>
@@ -49,7 +132,7 @@
   <main>
     <!-- Hero -->
     <section class="hero" id="home">
-      <div class="container hero-content text-center">
+      <div class="container hero-content">
         <h1>Professional Wound Care & Nursing Services at Your Home</h1>
         <p>Experienced nursing staff providing specialized wound care, dressing, debridement, and physiotherapy services in the comfort of your home.</p>
         <div class="hero-btns">
@@ -59,7 +142,6 @@
       </div>
     </section>
 
-    <!-- Call Action Section (Added from GulMohar) -->
     <section class="call-action">
       <div class="container call-action-inner">
         <div class="call-action-text">
@@ -74,12 +156,11 @@
     <!-- Services -->
     <section class="services" id="services">
       <div class="container">
-        <div class="section-header text-center">
+        <div class="section-header">
           <h2>Our Comprehensive Services</h2>
           <p>Professional medical care for all types of wounds in the comfort of your home.</p>
         </div>
         <div class="services-grid">
-          <!-- Cards -->
           <div class="service-card">
             <div class="service-icon"><i class="fas fa-band-aid"></i></div>
             <div class="service-content">
@@ -145,41 +226,83 @@
           </div>
           <a href="#appointment" class="btn">Schedule Nursing Visit</a>
         </div>
-      </div>
+        
     </section>
 
     <!-- Bed Sore -->
     <section class="bedsore" id="bedsore">
       <div class="container">
-        <div class="section-header text-center">
+        <div class="section-header">
           <h2>Bed Sore Management & Care</h2>
           <p>Specialized care for pressure ulcers at all stages.</p>
         </div>
         <div class="stages-container">
-          <div class="stage-card"><div class="stage-header"><h3>Stage 1</h3><p>Early Intervention</p></div><div class="stage-body"><ul><li><i class="fas fa-check"></i> Skin assessment and monitoring</li><li><i class="fas fa-check"></i> Pressure‑relieving techniques</li><li><i class="fas fa-check"></i> Specialized cushioning</li><li><i class="fas fa-check"></i> Skin protection products</li><li><i class="fas fa-check"></i> Repositioning schedule</li></ul></div></div>
-          <div class="stage-card"><div class="stage-header"><h3>Stage 2</h3><p>Partial Thickness</p></div><div class="stage-body"><ul><li><i class="fas fa-check"></i> Wound cleaning and debridement</li><li><i class="fas fa-check"></i> Advanced dressings</li><li><i class="fas fa-check"></i> Infection prevention</li><li><i class="fas fa-check"></i> Nutritional assessment</li><li><i class="fas fa-check"></i> Pressure redistribution devices</li></ul></div></div>
-          <div class="stage-card"><div class="stage-header"><h3>Stage 3</h3><p>Full Thickness</p></div><div class="stage-body"><ul><li><i class="fas fa-check"></i> Advanced wound care</li><li><i class="fas fa-check"></i> Surgical debridement if needed</li><li><i class="fas fa-check"></i> Negative pressure therapy</li><li><i class="fas fa-check"></i> Infection control management</li><li><i class="fas fa-check"></i> Comprehensive healing plan</li></ul></div></div>
+          <div class="stage-card">
+            <div class="stage-header">
+              <h3>Stage 1</h3>
+              <p>Early Intervention</p>
+            </div>
+            <div class="stage-body">
+              <ul>
+                <li><i class="fas fa-check"></i> Skin assessment and monitoring</li>
+                <li><i class="fas fa-check"></i> Pressure-relieving techniques</li>
+                <li><i class="fas fa-check"></i> Specialized cushioning</li>
+                <li><i class="fas fa-check"></i> Skin protection products</li>
+                <li><i class="fas fa-check"></i> Repositioning schedule</li>
+              </ul>
+            </div>
+          </div>
+          <div class="stage-card">
+            <div class="stage-header">
+              <h3>Stage 2</h3>
+              <p>Partial Thickness</p>
+            </div>
+            <div class="stage-body">
+              <ul>
+                <li><i class="fas fa-check"></i> Wound cleaning and debridement</li>
+                <li><i class="fas fa-check"></i> Advanced dressings</li>
+                <li><i class="fas fa-check"></i> Infection prevention</li>
+                <li><i class="fas fa-check"></i> Nutritional assessment</li>
+                <li><i class="fas fa-check"></i> Pressure redistribution devices</li>
+              </ul>
+            </div>
+          </div>
+          <div class="stage-card">
+            <div class="stage-header">
+              <h3>Stage 3</h3>
+              <p>Full Thickness</p>
+            </div>
+            <div class="stage-body">
+              <ul>
+                <li><i class="fas fa-check"></i> Advanced wound care</li>
+                <li><i class="fas fa-check"></i> Surgical debridement if needed</li>
+                <li><i class="fas fa-check"></i> Negative pressure therapy</li>
+                <li><i class="fas fa-check"></i> Infection control management</li>
+                <li><i class="fas fa-check"></i> Comprehensive healing plan</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Appointment Section (Integrated from GulMohar) -->
+    <!-- Appointment -->
     <section class="appointment" id="appointment">
       <div class="container">
         <div class="appointment-form">
           <h3>Book an Appointment</h3>
           <form id="appointmentForm">
             <div class="form-group">
-              <input type="text" id="name" placeholder="Your Name" required />
+              <input type="text" id="name" placeholder="Your Name" required aria-label="Your Name"/>
             </div>
             <div class="form-group">
-              <input type="tel" id="phone" placeholder="Your Contact Number" required />
+              <input type="tel" id="phone" placeholder="Your Contact Number" required aria-label="Your Contact Number"/>
             </div>
             <div class="form-group">
-              <input type="text" id="address" placeholder="Your Address" required />
+              <input type="text" id="address" placeholder="Your Address" required aria-label="Your Address"/>
             </div>
             <div class="form-group">
-              <input type="text" id="issue" placeholder="Service Required (Wound Care, Nursing, etc.)" required />
+              <input type="text" id="issue" placeholder="Service Required (Wound Care, Nursing, etc.)" required aria-label="Service Required"/>
             </div>
             <div class="appointment-options">
               <button type="submit" class="btn">Send via WhatsApp</button>
@@ -187,20 +310,19 @@
             </div>
           </form>
           <p class="appointment-fee">
-            Home visit fee  <span>₹500</span>
+            Home visit fee <span>₹500</span>
           </p>
-          <p class="contact-options">
-            
-            <a href="tel:+917972386291" style="text-decoration: none"><i class="fas fa-phone-alt"></i> Call</a>
-            <a href="mailto:care@thewoundcare.com" style="text-decoration: none"><i class="fas fa-envelope"></i> Email</a>
-          </p>
+          <div class="contact-options">
+            <a href="tel:+917972386291"><i class="fas fa-phone-alt"></i> Call</a>
+            <a href="mailto:care@thewoundcare.com"><i class="fas fa-envelope"></i> Email</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Floating Call Button (Added from GulMohar) -->
+    <!-- Floating Call Button -->
     <div class="floating-call">
-      <a href="tel:+917972386291" class="floating-call-btn">
+      <a href="tel:+917972386291" class="floating-call-btn" aria-label="Call us">
         <i class="fas fa-phone-alt"></i>
       </a>
     </div>
@@ -213,39 +335,74 @@
         <p>Professional wound care and nursing services at home by experienced medical staff.</p>
         <div class="contact-info-footer">
           <div><i class="fas fa-map-marker-alt"></i><span>123 Healing Street, Pune, Maharashtra 411001</span></div>
-          <div><i class="fas fa-phone-alt"></i><a class="address" href="tel:+919876543210">+91 98765 43210</a></div>
+          <div><i class="fas fa-phone-alt"></i><a class="address" href="tel:+917972386291">+91 79723 86291</a></div>
           <div><i class="fas fa-envelope"></i><a class="address" href="mailto:care@thewoundcare.com">care@thewoundcare.com</a></div>
         </div>
       </div>
-      <div class="footer-column"><h3>Our Services</h3><ul><li><a href="#services">Wound Dressing & Debridement</a></li><li><a href="#services">Nursing Care at Home</a></li><li><a href="#bedsore">Bed Sore Management</a></li><li><a href="#contact">IV Fluids & Injections</a></li><li><a href="#contact">Post-Operative Care</a></li><li><a href="#nursing">Parkinson's & Stroke Care</a></li></ul></div>
-      <div class="footer-column"><h3>Quick Links</h3><ul><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#nursing">Nursing Care</a></li><li><a href="#bedsore">Bed Sore Care</a></li><li><a href="#appointment">Book Appointment</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li></ul></div>
-      <div class="footer-column"><h3>Service Areas</h3><ul><li>Pune City</li><li>Pimpri‑Chinchwad</li><li>Hinjewadi</li><li>Kothrud</li><li>Wakad</li><li>All Maharashtra</li></ul></div>
+      <div class="footer-column">
+        <h3>Our Services</h3>
+        <ul>
+          <li><a href="#services">Wound Dressing & Debridement</a></li>
+          <li><a href="#services">Nursing Care at Home</a></li>
+          <li><a href="#bedsore">Bed Sore Management</a></li>
+          <li><a href="#contact">IV Fluids & Injections</a></li>
+          <li><a href="#contact">Post-Operative Care</a></li>
+          <li><a href="#nursing">Parkinson's & Stroke Care</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#nursing">Nursing Care</a></li>
+          <li><a href="#bedsore">Bed Sore Care</a></li>
+          <li><a href="#appointment">Book Appointment</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Service Areas</h3>
+        <ul>
+          <li>Pune City</li>
+          <li>Pimpri-Chinchwad</li>
+          <li>Hinjewadi</li>
+          <li>Kothrud</li>
+          <li>Wakad</li>
+          <li>All Maharashtra</li>
+        </ul>
+      </div>
     </div>
     <div class="copyright">
-      <p>&copy; 2025 TheWoundCare.com. All rights reserved.</p>
+      <p>&copy; <span id="current-year">2025</span> TheWoundCare.com. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- WhatsApp Integration (Added from GulMohar) -->
   <script>
-    document.getElementById('appointmentForm').addEventListener('submit', function (e) {
+    // Mobile navigation toggle
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      const nav = document.querySelector('nav ul');
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('open');
+      this.innerHTML = expanded ? '<i class="fas fa-bars"></i>' : '<i class="fas fa-times"></i>';
+    });
+
+    // Form submission
+    document.getElementById('appointmentForm').addEventListener('submit', function(e) {
       e.preventDefault();
       const name = document.getElementById('name').value;
       const phone = document.getElementById('phone').value;
       const address = document.getElementById('address').value;
       const issue = document.getElementById('issue').value;
-      const message = `Hello, I would like to book a home visit from TheWoundCare. My name is ${name}. My contact number is ${phone}. My address is ${address}. I need service for: ${issue}.`;
-      const whatsappLink = `https://wa.me/917972386291?text=${encodeURIComponent(message)}`;
+      
+      const message = `Hello, I would like to book a home visit from TheWoundCare.%0A%0AName: ${name}%0APhone: ${phone}%0AAddress: ${address}%0AService Needed: ${issue}`;
+      const whatsappLink = `https://wa.me/917972386291?text=${message}`;
       window.open(whatsappLink, '_blank');
     });
-  </script>
-  
-  <!-- Original Script -->
-  <script>
-    // Toggle mobile nav
-    document.querySelector('.menu-toggle').addEventListener('click', () => {
-      document.querySelector('nav ul').classList.toggle('open');
-    });
+
+    // Update copyright year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
