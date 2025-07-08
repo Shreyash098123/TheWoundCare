@@ -216,7 +216,7 @@ header {
   height: 50px;
   width: auto;
   margin-right: 0.5rem;
-  margin-left: 0.7rem;
+  margin-left: 2rem;
 }
 
 .menu-toggle {
@@ -228,7 +228,7 @@ header {
   cursor: pointer;
   padding: 0.5rem;
   z-index: 1001;
-  margin-left: 15rem;
+  margin-left: 10rem;
 }
 
 nav ul {
